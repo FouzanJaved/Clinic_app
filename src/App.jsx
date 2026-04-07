@@ -11,11 +11,13 @@ import BusinessType from './components/BusinessType'
 import ClinicDashboard from './components/ClinicDashboard'
 import PharmacyDashboard from './components/PharmacyDashboard'
 import LaboratoryDashboard from './components/LaboratoryDashboard'
+import PharmacyDashboard from './components/PharmacyDashboard'
 
 function App() {
   const [isLogin, setIsLogin] = useState(false)
   const [appState, setAppState] = useState({ loading: true })
   const fetchingRef = useRef(false)
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
